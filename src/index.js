@@ -16,9 +16,9 @@ function onInput(e) {
   e.preventDefault();
   const inputValue = refs.searchBox.value.trim();
 
-  fetchCountries(inputValue).then(country => {
-    countryList.innerHTML = CountryList(country);
-  });
+  // fetchCountries(inputValue).then(country => {
+  //   countryList.innerHTML = CountryList(country);
+  // });
 
   // if (inputValue === '') {
   //     console.log('Enter country name');
