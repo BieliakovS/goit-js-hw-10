@@ -28,7 +28,15 @@
     "parcel": "^2.6.0",
     "parcel-bundler": "^1.12.5",
     "parcel-reporter-clean-dist": "^1.0.4",
+    "parcel-transformer-hbs": "^1.0.4",
     "posthtml-include": "^1.7.4"
+  },
+  "parcel": {
+    "transformers": {
+      "*.hbs": [
+        "parcel-transformer-hbs"
+      ]
+    }
   },
   "browserslist": "> 0.5%, last 2 versions, not dead"
 }
