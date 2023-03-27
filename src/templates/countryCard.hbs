@@ -1,11 +1,12 @@
-<div class="country">
-    <svg>
-        <use href={{this.flags.svg}}></use>
-    </svg>
-    <p class="country-name">{{this.name}}</p>
-    <ul>
-        <li>Capital: {{this.capital}}</li>
-        <li>Population: {{this.population}}</li>
-        <li>Languages: {{this.languages}}</li>
-    </ul>
-</div>
+<svg>
+  <use class='country-image' href={{this.flags.svg}}></use>
+</svg>
+<p class='country-name'>{{this.name}}</p>
+<ul class='country-info__country-propeties-list'>
+  <li class='country-info__country-propeties-item'>Capital:
+    {{this.capital}}</li>
+  <li class='country-info__country-propeties-item'>Population:
+    {{this.population}}</li>
+  <li class='country-info__country-propeties-item'>Languages:
+    {{this.languages}}</li>
+</ul>
