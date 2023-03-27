@@ -30,14 +30,19 @@ function onInput(e) {
         Notiflix.Notify.info(
           'Too many matches found. Please enter a more specific name.'
         );
+        refs.countryList.innerHTML = '';
       }
       if (value.length >= 2 && value.length <= 10) {
-        console.log(refs.countryList);
-        refs.countryList.innerHTML = CountryListTemplate(value[0]);
+        let markup = '';
+        for (let i = 0; i < value.length; i += 1) {
+          markup += CountryListTemplate(value[i]);
+        }
+        refs.countryList.innerHTML = markup;
+        refs.countryInfo.innerHTML = '';
       }
       if (value.length === 1) {
-        console.log(value[0]);
         refs.countryInfo.innerHTML = CountryCardTemplate(value);
+        refs.countryList.innerHTML = '';
       }
     })
     .catch(error => {
