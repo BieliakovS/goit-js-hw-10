@@ -1,11 +1,11 @@
-<span class='wrapper'>
-  <svg class='country-image' width="50" height="50">
-    <use href={{this.flags.svg}}></use>
-  </svg>
-  <p class='country-name'><span
-      class='font-weight-bold'
-    >{{this.name.official}}</span></p>
-</span>
+<p class='country-name'><span class='font-weight-bold'><img
+      class='country-image'
+      src={{this.flags.svg}}
+      alt='flag'
+      width='50'
+      height='50'
+    />
+    {{this.name.official}}</span></p>
 <ul class='country-info__country-propeties-list'>
   <li class='country-info__country-propeties-item'><span
       class='font-weight-bold'
