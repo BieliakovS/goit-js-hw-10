@@ -21,6 +21,7 @@ body {
 
 ul {
   list-style: none;
+  padding: 0;
 }
 
 svg {
@@ -29,6 +30,7 @@ svg {
 }
 
 .country-name {
+  margin: 16px 0;
   font-size: 30px;
 }
 
