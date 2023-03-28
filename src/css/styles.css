@@ -29,7 +29,11 @@ svg {
 }
 
 .country-name {
-  font-size: 20px;
+  font-size: 30px;
+}
+
+.country-name--list {
+  font-size: 16px;
 }
 
 .font-weight-bold {

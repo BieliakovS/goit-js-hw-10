@@ -1,6 +1,10 @@
 <li class='country-list__item'>
-  <svg>
-    <use class='country-image' href={{this.flags.svg}}></use>
-  </svg>
-  <p class='country-name country-name--list'>{{this.name.official}}</p>
+  <p class='country-name country-name--list'><span class='font-weight-bold'><img
+        class='country-image'
+        src={{this.flags.svg}}
+        alt='flag'
+        width='30'
+        height='20'
+      />
+      {{this.name.official}}</span></p>
 </li>
