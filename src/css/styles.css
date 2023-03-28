@@ -23,12 +23,21 @@ ul {
   list-style: none;
 }
 
-.country-list__item {
+.wrapper {
   display: flex;
   justify-content: space-between;
+  width: 700px;
 }
 
 svg {
   width: 200px;
   height: 200px;
+}
+
+.country-name {
+  font-size: 30px;
+}
+
+.font-weight-bold {
+  font-weight: bold;
 }
