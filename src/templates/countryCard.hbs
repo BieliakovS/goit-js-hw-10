@@ -1,14 +1,22 @@
-<div class="wrapper">
-  <svg>
-  <use class='country-image' href={{this.flags.svg}}></use>
-</svg>
-<p class='country-name'><span class="font-weight-bold">{{this.name.official}}</span></p>
-</div>
+<span class='wrapper'>
+  <svg class='country-image' width="50" height="50">
+    <use href={{this.flags.svg}}></use>
+  </svg>
+  <p class='country-name'><span
+      class='font-weight-bold'
+    >{{this.name.official}}</span></p>
+</span>
 <ul class='country-info__country-propeties-list'>
-  <li class='country-info__country-propeties-item'><span class="font-weight-bold">Capital:</span>
+  <li class='country-info__country-propeties-item'><span
+      class='font-weight-bold'
+    >Capital:</span>
     {{this.capital}}</li>
-  <li class='country-info__country-propeties-item'><span class="font-weight-bold">Population:</span>
+  <li class='country-info__country-propeties-item'><span
+      class='font-weight-bold'
+    >Population:</span>
     {{this.population}}</li>
-  <li class='country-info__country-propeties-item'><span class="font-weight-bold">Languages:</span>
+  <li class='country-info__country-propeties-item'><span
+      class='font-weight-bold'
+    >Languages:</span>
     {{this.languages}}</li>
 </ul>
