@@ -26,7 +26,7 @@ function onInput(e) {
 
   fetchCountries(inputValue)
     .then(value => {
-      console.log(value)
+      console.log(value);
       if (value.length > 10) {
         Notiflix.Notify.info(
           'Too many matches found. Please enter a more specific name.'
@@ -38,11 +38,18 @@ function onInput(e) {
         for (let i = 0; i < value.length; i += 1) {
           markup += CountryListTemplate(value[i]);
         }
-        console.log(markup)
         refs.countryList.innerHTML = markup;
         refs.countryInfo.innerHTML = '';
       }
       if (value.length === 1) {
+        const valuesLanguages = Object.values(value[0].languages);
+
+        value[0].languages = '';
+
+        for (const valueLanguages of valuesLanguages) {
+          value[0].languages += `${valueLanguages} `;
+        }
+
         refs.countryInfo.innerHTML = CountryCardTemplate(value[0]);
         refs.countryList.innerHTML = '';
       }
